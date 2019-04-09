@@ -115,13 +115,13 @@ import UIKit
     }
     
     internal func setupDisplayLink() {
-        self.displayLink = CADisplayLink(target: WeakProxy(self), selector: #selector(updateFrame))
-        self.displayLink?.add(to: .current, forMode: .common)
+//        self.displayLink = CADisplayLink(target: WeakProxy(self), selector: #selector(updateFrame))
+//        self.displayLink?.add(to: .current, forMode: .common)
     }
 
-    @objc internal func updateFrame() {
-        self.animate()
-    }
+//    @objc internal func updateFrame() {
+//        self.animate()
+//    }
     
     open func set(progress: Int, animated: Bool) {
         guard progress <= numberOfPages - 1 && progress >= 0 else { return }
